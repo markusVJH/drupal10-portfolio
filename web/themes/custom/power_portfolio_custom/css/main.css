@@ -10,13 +10,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: white;
-  background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(34, 0, 70, 1) 100%
-  );
+  color: lightgray;
+  background: linear-gradient(90deg, rgb(17, 0, 24) 0%, rgb(0, 0, 0) 100%);
 }
 
 a {
@@ -348,7 +343,12 @@ div#block-tabs ul {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 0, 70, 1) 100%
+  );
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -357,13 +357,13 @@ div#block-tabs ul {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #151515;
+  color: #ffffff;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #151515;
+  color: #ffffff;
   background-color: #b151ff;
 }
 
@@ -380,7 +380,13 @@ div#block-tabs ul {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 0, 70, 1) 100%
+  );
+  color: white;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -390,7 +396,7 @@ div#block-tabs ul {
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
-  color: #151515;
+  color: #ffffff;
 }
 
 .navbar-mobile .dropdown ul a i {
@@ -765,9 +771,11 @@ main.main {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border-style: none;
   border-radius: 3px;
   font-size: 16px;
+  background-color: #292929;
+  color: #fff;
 }
 
 /* Style the submit button */
@@ -804,4 +812,19 @@ main.main {
 }
 .views-field-field-project-tags {
   font-style: italic;
+}
+.layout-content.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block-power-portfolio-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.views-row {
+  border: 1px lightgray;
 }
