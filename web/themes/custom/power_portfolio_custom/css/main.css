@@ -10,16 +10,22 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: white;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 0, 70, 1) 100%
+  );
 }
 
 a {
-  color: #ffc451;
+  color: #b151ff;
   text-decoration: none !important;
 }
 
 a:hover {
-  color: #ffd584;
+  color: white;
   text-decoration: none;
 }
 
@@ -31,7 +37,14 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -42,7 +55,7 @@ h6 {
   /* right: 15px; */
   bottom: 15px;
   z-index: 970;
-  background: #ffc451;
+  background: #b151ff;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -68,7 +81,7 @@ h6 {
 }
 
 .back-to-top:hover i {
-  color: #ffc451;
+  color: #b151ff;
 }
 
 .back-to-top.active {
@@ -95,7 +108,7 @@ h6 {
   position: fixed;
   top: calc(50% - 0px);
   left: calc(50% - 30px);
-  border: 6px solid #ffc451;
+  border: 6px solid #b151ff;
   border-top-color: #151515;
   border-bottom-color: #151515;
   border-radius: 50%;
@@ -138,10 +151,10 @@ h6 {
 }
 
 #header.F-no_banner {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 #header.no_banner {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 #header.banner {
   background-color: #000;
@@ -217,8 +230,8 @@ div#block-tabs ul {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
-  color: #ffc451;
+.navbar li:hover > a {
+  color: #b151ff;
 }
 
 .navbar .dropdown ul {
@@ -254,11 +267,11 @@ div#block-tabs ul {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-  background-color: #ffc451;
+.navbar .dropdown ul li:hover > a {
+  background-color: #b151ff;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -270,7 +283,7 @@ div#block-tabs ul {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -282,7 +295,7 @@ div#block-tabs ul {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -349,9 +362,9 @@ div#block-tabs ul {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #151515;
-  background-color: #ffc451;
+  background-color: #b151ff;
 }
 
 .navbar-mobile .getstarted,
@@ -386,11 +399,11 @@ div#block-tabs ul {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  background-color: #ffc451;
+.navbar-mobile .dropdown ul li:hover > a {
+  background-color: #b151ff;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -430,7 +443,7 @@ div#block-tabs ul {
 }
 
 #hero h1 span {
-  color: #ffc451;
+  color: #b151ff;
 }
 
 #hero h2 {
@@ -450,7 +463,7 @@ div#block-tabs ul {
 #hero .icon-box i {
   font-size: 32px;
   line-height: 1;
-  color: #ffc451;
+  color: #b151ff;
 }
 
 #hero .icon-box h3 {
@@ -468,11 +481,11 @@ div#block-tabs ul {
 }
 
 #hero .icon-box h3 a:hover {
-  color: #ffc451;
+  color: #b151ff;
 }
 
 #hero .icon-box:hover {
-  border-color: #ffc451;
+  border-color: #b151ff;
 }
 
 @media (min-width: 1024px) {
@@ -540,7 +553,6 @@ section {
   color: #151515;
 }
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -572,7 +584,7 @@ section {
 }
 
 #footer .footer-top .footer-info h3 span {
-  color: #ffc451;
+  color: #b151ff;
 }
 
 #footer .footer-top .footer-info p {
@@ -599,7 +611,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #ffc451;
+  background: #b151ff;
   color: #151515;
   text-decoration: none;
 }
@@ -624,7 +636,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ffc451;
+  color: #b151ff;
   font-size: 18px;
   line-height: 1;
 }
@@ -647,7 +659,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ffc451;
+  color: #b151ff;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -658,13 +670,13 @@ section {
   border-radius: 4px;
 }
 
-#footer .footer-top .footer-newsletter form input[type=search] {
+#footer .footer-top .footer-newsletter form input[type="search"] {
   border: 0;
   padding: 4px;
   width: calc(100% - 90px);
 }
 
-#footer .footer-top .footer-newsletter form input[type=submit] {
+#footer .footer-top .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: -2px;
@@ -673,13 +685,13 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #ffc451;
+  background: #b151ff;
   color: #151515;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
-#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
   background: #ffcd6b;
 }
 
@@ -703,24 +715,24 @@ section {
 .user-login-form label,
 .user-register-form label,
 .user-pass label {
-  border-bottom: 1px solid #ffc451;
+  border-bottom: 1px solid #b151ff;
   margin-bottom: 10px;
 }
-.user-login-form .form-actions input[type=submit],
-.user-register-form .form-actions input[type=submit],
-.user-pass .form-actions input[type=submit] {
+.user-login-form .form-actions input[type="submit"],
+.user-register-form .form-actions input[type="submit"],
+.user-pass .form-actions input[type="submit"] {
   font-size: 16px;
   padding: 10px 20px;
-  background: #ffc451;
+  background: #b151ff;
   color: #151515;
   transition: 0.3s;
-  border: 1px solid #ffc451;
+  border: 1px solid #b151ff;
   border-radius: 0 4px 4px 0;
 }
 
-.user-login-form .form-actions input[type=submit]:hover,
-.user-register-form .form-actions input[type=submit]:hover,
-.user-pass .form-actions input[type=submit]:hover {
+.user-login-form .form-actions input[type="submit"]:hover,
+.user-register-form .form-actions input[type="submit"]:hover,
+.user-pass .form-actions input[type="submit"]:hover {
   background: #ffcd6b;
 }
 
@@ -728,4 +740,49 @@ section {
 
 main.main {
   margin-top: 90px;
+}
+
+/* Contact me form */
+
+.contact-message-feedback-form {
+  max-width: 400px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the form horizontally */
+  margin-top: 20px;
+  padding: 20px; /* Add some padding for spacing */
+  background: black;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+
+  /* Text styles */
+  font-family: Arial, sans-serif;
+}
+
+/* Style form fields and labels */
+.contact-message-feedback-form input[type="text"],
+.contact-message-feedback-form textarea,
+.contact-message-feedback-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+.contact-message-feedback-form input[type="submit"] {
+  background-color: #b151ff; /* Button background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+/* Add some hover effect to the submit button */
+.contact-message-feedback-form input[type="submit"]:hover {
+  background-color: #8c05fb; /* Hover background color */
 }
