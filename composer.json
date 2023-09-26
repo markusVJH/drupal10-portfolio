@@ -22,6 +22,7 @@
         "drupal/gin": "^3.0@RC",
         "drupal/gin_login": "^2.0",
         "drupal/gin_toolbar": "^1.0@RC",
+        "drupal/power_portfolio": "^9.0",
         "drush/drush": "^12.2"
     },
     "require-dev": {
