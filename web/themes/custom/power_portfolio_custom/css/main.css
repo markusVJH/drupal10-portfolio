@@ -802,3 +802,6 @@ main.main {
   );
   color: white;
 }
+.views-field-field-project-tags {
+  font-style: italic;
+}
