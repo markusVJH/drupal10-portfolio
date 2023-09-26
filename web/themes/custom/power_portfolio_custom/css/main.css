@@ -786,3 +786,19 @@ main.main {
 .contact-message-feedback-form input[type="submit"]:hover {
   background-color: #8c05fb; /* Hover background color */
 }
+
+/* project filter */
+
+.views-exposed-form {
+  max-width: 15rem;
+}
+
+#edit-tid {
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 0, 70, 1) 100%
+  );
+  color: white;
+}
