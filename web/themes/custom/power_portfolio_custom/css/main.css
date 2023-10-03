@@ -777,6 +777,10 @@ main.main {
   background-color: #292929;
   color: #fff;
 }
+textarea {
+  resize: vertical;
+  height: 150px;
+}
 
 /* Style the submit button */
 .contact-message-feedback-form input[type="submit"] {
