@@ -11,7 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: lightgray;
-  background: linear-gradient(90deg, rgb(17, 0, 24) 0%, rgb(0, 0, 0) 100%);
+  background: #131313;
 }
 
 a {
@@ -743,11 +743,9 @@ section {
 }
 
 /* New Css Below */
-
 main.main {
   margin-top: 90px;
 }
-
 /* Contact me form */
 
 .contact-message-feedback-form {
@@ -755,8 +753,7 @@ main.main {
   margin: 0 auto; /* Center the form horizontally */
   margin-top: 20px;
   padding: 20px; /* Add some padding for spacing */
-  background: black;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgb(75, 75, 75);
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
 
@@ -784,7 +781,7 @@ textarea {
 
 /* Style the submit button */
 .contact-message-feedback-form input[type="submit"] {
-  background-color: #b151ff; /* Button background color */
+  background-color: #4e008d; /* Button background color */
   color: #fff; /* Text color */
   padding: 10px 20px;
   border: none;
@@ -793,7 +790,10 @@ textarea {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
 /* Add some hover effect to the submit button */
 .contact-message-feedback-form input[type="submit"]:hover {
   background-color: #8c05fb; /* Hover background color */
@@ -804,31 +804,24 @@ textarea {
 .views-exposed-form {
   max-width: 15rem;
 }
-
+#block-pagetitle {
+  text-align: center;
+  padding-top: 2rem;
+}
+.views-exposed-form {
+  margin: 0 auto;
+}
 #edit-tid {
-  background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(34, 0, 70, 1) 100%
-  );
   color: white;
+  background-color: #292929;
 }
 .views-field-field-project-tags {
   font-style: italic;
 }
-.layout-content.container {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.block-power-portfolio-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
 .views-row {
   border: 1px lightgray;
+}
+.field-content img {
+  width: 100%;
+  height: auto;
 }
