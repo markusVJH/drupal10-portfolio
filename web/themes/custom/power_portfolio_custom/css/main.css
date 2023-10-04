@@ -345,9 +345,9 @@ div#block-tabs ul {
   padding: 10px 0;
   background: linear-gradient(
     0deg,
-    rgba(2, 0, 36, 1) 0%,
+    rgb(0, 0, 0) 0%,
     rgba(0, 0, 0, 1) 0%,
-    rgba(34, 0, 70, 1) 100%
+    #131313
   );
   overflow-y: auto;
   transition: 0.3s;
@@ -801,15 +801,17 @@ textarea {
 
 /* project filter */
 
-.views-exposed-form {
-  max-width: 15rem;
-}
 #block-pagetitle {
   text-align: center;
   padding-top: 2rem;
 }
 .views-exposed-form {
+  max-width: 15rem;
   margin: 0 auto;
+  margin-bottom: 1rem;
+}
+#edit-actions {
+  padding-top: 0.5rem;
 }
 #edit-tid {
   color: white;
