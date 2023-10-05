@@ -222,15 +222,19 @@ function power_portfolio_preprocess_page(&$variables) {
       'card_url' => theme_get_setting('card' . $i . '_url', 'power_portfolio'),
     ];
   }
-  $fid = theme_get_setting('bg_image');
-  if (!empty($fid)) {
-    $file = \Drupal::entityTypeManager()->getStorage('file')->load($fid[0]);
+$fid = theme_get_setting('bg_image');
+if (!empty($fid)) {
+  $file = \Drupal::entityTypeManager()->getStorage('file')->load($fid[0]);
+  if ($file) {
     $uri = $file->getFileUri();
     $image_path = \Drupal::service('file_url_generator')->generateAbsoluteString($uri);
+  } else {
+    $image_path = '/image/BG.jpg'; // Provide a fallback image path.
   }
-  else {
-    $image_path = \Drupal::service('extension.list.theme')->getPath('power_portfolio') . '/image/NvXs1z.jpg';
-  }
+} else {
+  // Use the default image when $fid is empty.
+  $image_path = \Drupal::service('extension.list.theme')->getPath('power_portfolio') . '/image/BG.jpg';
+}
   
   $variables['card'] = $slider;
   $variables['banner_bg_img'] = $image_path;
