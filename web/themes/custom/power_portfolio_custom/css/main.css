@@ -10,7 +10,12 @@
 --------------------------------------------------------------*/
 body {
   color: lightgray;
-  background: #131313;
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(19, 19, 19, 1) 100%
+  );
 }
 
 a {
@@ -730,18 +735,18 @@ section {
 }
 
 /* New Css Below */
-/* Contact me form */
 main.main {
   margin-top: 90px;
 }
+/* Contact me form */
 .contact-message-feedback-form {
-  max-width: 400px; /* Adjust the width as needed */
-  margin: 0 auto; /* Center the form horizontally */
+  max-width: 400px;
+  margin: 0 auto;
   margin-top: 20px;
-  padding: 20px; /* Add some padding for spacing */
-  background: rgb(75, 75, 75);
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  padding: 20px;
+  background: #1f1f1f;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style form fields and labels */
@@ -754,8 +759,7 @@ main.main {
   border-style: none;
   border-radius: 3px;
   font-size: 16px;
-  background-color: #292929;
-  color: #fff;
+  background-color: lightgray;
 }
 textarea {
   resize: vertical;
@@ -764,8 +768,8 @@ textarea {
 
 /* Style the submit button */
 .contact-message-feedback-form input[type="submit"] {
-  background-color: #4e008d; /* Button background color */
-  color: #fff; /* Text color */
+  background-color: #b151ff;
+  color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 3px;
@@ -779,7 +783,7 @@ textarea {
 }
 /* Add some hover effect to the submit button */
 .contact-message-feedback-form input[type="submit"]:hover {
-  background-color: #8c05fb; /* Hover background color */
+  background-color: #8c05fb;
 }
 
 /* project filter */
@@ -815,4 +819,7 @@ textarea {
 }
 * {
   font-family: "Montserrat", sans-serif;
+}
+h1 {
+  margin-bottom: 2rem;
 }
