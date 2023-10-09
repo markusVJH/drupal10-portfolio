@@ -8,6 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
 body {
   color: lightgray;
   background: linear-gradient(
@@ -817,9 +821,39 @@ textarea {
 .feed-icon {
   display: none;
 }
-* {
-  font-family: "Montserrat", sans-serif;
-}
+
 h1 {
   margin-bottom: 2rem;
+}
+/* back button */
+#block-gobackblock {
+  background-color: #b151ff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease-in-out;
+  margin-bottom: 2rem;
+}
+#block-gobackblock a {
+  color: black;
+  font-size: 28px;
+  line-height: 0;
+  transition: 0.4s ease-in-out;
+}
+#block-gobackblock:hover {
+  background-color: #151515;
+}
+#block-gobackblock:hover a {
+  color: #b151ff;
+}
+@media (max-width: 768px) {
+  #block-gobackblock {
+    position: static;
+  }
 }

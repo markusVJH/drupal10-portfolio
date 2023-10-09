@@ -16,12 +16,14 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "drupal/browser_back_button": "^2.0",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
         "drupal/gin": "^3.0@RC",
         "drupal/gin_login": "^2.0",
         "drupal/gin_toolbar": "^1.0@RC",
+        "drupal/go_back": "^1.8",
         "drupal/inclusive_cards": "^1.0@beta",
         "drupal/power_portfolio": "^9.0",
         "drush/drush": "^12.2"
