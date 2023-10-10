@@ -25,6 +25,7 @@ body {
 a {
   color: #b151ff;
   text-decoration: none !important;
+  transition: 0.4s ease-in-out;
 }
 
 a:hover {
@@ -765,16 +766,18 @@ main.main {
   font-size: 16px;
   background-color: lightgray;
 }
+
 textarea {
   resize: vertical;
   height: 150px;
 }
 
 /* Style the submit button */
-.contact-message-feedback-form input[type="submit"] {
+.contact-message-feedback-form input[type="submit"],
+#edit-submit-projects-list {
   background-color: #b151ff;
-  color: #fff;
-  padding: 10px 20px;
+  color: white;
+  padding: 8px 20px;
   border: none;
   border-radius: 3px;
   font-size: 16px;
@@ -786,7 +789,8 @@ textarea {
   justify-content: space-between;
 }
 /* Add some hover effect to the submit button */
-.contact-message-feedback-form input[type="submit"]:hover {
+.contact-message-feedback-form input[type="submit"]:hover,
+#edit-submit-projects-list:hover {
   background-color: #8c05fb;
 }
 
@@ -799,10 +803,7 @@ textarea {
 .views-exposed-form {
   max-width: 15rem;
   margin: 0 auto;
-  margin-bottom: 1rem;
-}
-#edit-actions {
-  padding-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 #edit-tid {
   color: white;
@@ -810,6 +811,12 @@ textarea {
 }
 .views-field-field-project-tags {
   font-style: italic;
+}
+#views-exposed-form-projects-list-page-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 .views-row {
   border: 1px lightgray;
