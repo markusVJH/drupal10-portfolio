@@ -1,7 +1,14 @@
-power_portfolio.small:
+power_portfolio.mobile:
   label: small
   mediaQuery: ''
   weight: 0
+  multipliers:
+    - 1x
+    - 2x
+power_portfolio.mobilelandscape:
+  label: mobilelandscape
+  mediaQuery: 'all and (min-width: 550px)'
+  weight: 2
   multipliers:
     - 1x
     - 2x
